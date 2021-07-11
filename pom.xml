@@ -31,6 +31,14 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-maven-plugin -->
+        <dependency>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs-maven-plugin</artifactId>
+            <version>4.3.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -56,8 +64,6 @@
                     <doclint>none</doclint>
                 </configuration>
             </plugin>
-
-
         </plugins>
     </build>
 </project>
