@@ -6,8 +6,12 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Sample Test class for CI test
+ *
+ * source from https://www.vogella.com/tutorials/JUnit/article.html
+ */
 public class CalculatorTest {
-    // source from https://www.vogella.com/tutorials/JUnit/article.html
     private Calculator calculator;
 
     @BeforeEach

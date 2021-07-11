@@ -11,7 +11,9 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <!-- https://stackoverflow.com/questions/3017695/how-to-configure-encoding-in-maven-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencies>
@@ -39,6 +41,18 @@
                 <configuration>
                     <parallel>methods</parallel>
                     <threadCount>10</threadCount>
+                </configuration>
+            </plugin>
+
+            <!-- Generate standalone javadocs -->
+            <!--https://maven.apache.org/plugins/maven-javadoc-plugin/usage.html-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <!--https://dkbalachandar.wordpress.com/2017/12/20/turn-off-doclint-in-jdk-8/-->
+                    <doclint>none</doclint>
                 </configuration>
             </plugin>
         </plugins>
