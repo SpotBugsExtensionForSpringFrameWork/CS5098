@@ -6,7 +6,7 @@ name: Java CI with Maven
 on:
   push:
     # Start CI process only when someone pushed to master and dev
-    branches: [ master, dev ]
+    branches: [ main, dev ]
 
 jobs:
   build:
