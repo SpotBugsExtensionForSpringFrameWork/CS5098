@@ -52,6 +52,27 @@
             <version>5.3.8</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.h3xstream.findsecbugs/findsecbugs-plugin -->
+        <dependency>
+            <groupId>com.h3xstream.findsecbugs</groupId>
+            <artifactId>findsecbugs-plugin</artifactId>
+            <version>1.11.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h3xstream.findsecbugs</groupId>
+            <artifactId>findsecbugs-test-util</artifactId>
+            <version>1.11.0</version>
+            <classifier>tests</classifier>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.h3xstream.findsecbugs/findsecbugs-samples-deps -->
+        <dependency>
+            <groupId>com.h3xstream.findsecbugs</groupId>
+            <artifactId>findsecbugs-samples-deps</artifactId>
+            <version>1.11.0</version>
+        </dependency>
+
 
     </dependencies>
 
