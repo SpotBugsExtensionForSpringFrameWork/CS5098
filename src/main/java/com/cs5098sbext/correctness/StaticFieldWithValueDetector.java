@@ -1,10 +1,10 @@
-package badpractice;
+package com.cs5098sbext.correctness;
 
 import edu.umd.cs.findbugs.Detector;
 import edu.umd.cs.findbugs.ba.ClassContext;
 
-public class InjectValueDetector implements Detector{
 
+public class StaticFieldWithValueDetector implements Detector {
     @Override
     public void visitClassContext(ClassContext classContext) {
 
@@ -14,5 +14,4 @@ public class InjectValueDetector implements Detector{
     public void report() {
 
     }
-
 }
